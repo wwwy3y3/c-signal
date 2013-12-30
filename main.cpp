@@ -1,11 +1,13 @@
 #include <iostream>
 #include <stdio.h>
+#include "memory.h"
 #include <sys/types.h>
 #include <unistd.h>
 #include <signal.h>
 #include <boost/numeric/ublas/matrix.hpp>
 #include <boost/numeric/ublas/io.hpp>
 
+#include <sys/wait.h>
 #include <errno.h>
 #include <sys/mman.h>
 #include <fcntl.h>
