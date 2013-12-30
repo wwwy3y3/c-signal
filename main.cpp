@@ -85,13 +85,11 @@ void prodMatrix(int (*start)( int&,int& ),  int (*write)( int&,int& )){
 
 void handler1(int signum){
     prodMatrix(&multi4,&multi1);
-    cout<<"setup1"<<endl;
 	exit(1);
 }
 
 void handler2(int signum){
     prodMatrix(&multi3,&multi2);
-    cout<<"setup2"<<endl;
 	exit(1);
 }
 
@@ -184,7 +182,7 @@ int main(int argc, char const *argv[])
 	//kill
 	if (fp1>0 && fp2>0) //father
 	{	
-		cout<<"kill"<<endl;
+		//cout<<"kill"<<endl;
 		kill(fp1, SIGUSR1);
 		kill(fp2, SIGUSR2);
 	
